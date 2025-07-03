@@ -187,13 +187,13 @@ const Registro = ({ navigation }) => {
         width={230}
         height={85}
         source={{
-          uri: 'https://res.cloudinary.com/dcf9eqqgt/image/upload/v1749310762/by_futblex_pro_lsbxxv.png'
+          uri: 'https://res.cloudinary.com/dcf9eqqgt/image/upload/v1750757980/Flexrun_pro_1_ab4wmw.png'
         }}
       />
 
       {isLoading && (
         <View style={{ marginVertical: 20 }}>
-          <Swing size={48} color="#FF6B00" />
+          <Swing size={48} color="#34cee6" />
         </View>
       )}
 

@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
         display:"flex",
         alignItems:"center",
         justifyContent:"center",
-        backgroundColor: "#FF6B00",
+        backgroundColor: "#34cee6",
         
     },
     botonLoginGoogle:{

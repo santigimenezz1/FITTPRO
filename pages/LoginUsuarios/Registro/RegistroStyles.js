@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#FF6B00",
+    backgroundColor: "#34cee6",
   },
   botonLoginGoogle: {
     width: "auto",
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
   },
   // ⬇️ Estilos nuevos para el Picker
   pickerContainer: {
-    backgroundColor: "#FF6B00",
+    backgroundColor: "#34cee6",
     borderRadius: 12,
     width: 300,
     overflow: "hidden",

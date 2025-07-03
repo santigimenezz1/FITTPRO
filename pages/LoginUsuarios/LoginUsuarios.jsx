@@ -52,7 +52,7 @@ const LoginUsuarios = ({ navigation }) => {
         height={90}
         source={{
           uri:
-            "https://res.cloudinary.com/dcf9eqqgt/image/upload/v1749310762/by_futblex_pro_lsbxxv.png",
+            "https://res.cloudinary.com/dcf9eqqgt/image/upload/v1750757980/Flexrun_pro_1_ab4wmw.png",
         }}
       />
 
@@ -65,7 +65,7 @@ const LoginUsuarios = ({ navigation }) => {
         }}
       >
         {/* Texto encima del Picker */}
-        <Text style={{ color: "#FF6B00", fontSize: 24 }}>
+        <Text style={{ color: "#34cee6", fontSize: 24 }}>
           {idioma.selectLanguage}
         </Text>
 
@@ -73,7 +73,7 @@ const LoginUsuarios = ({ navigation }) => {
         <Picker
           selectedValue={paisSeleccionado}
           onValueChange={(itemValue) => setPaisSeleccionado(itemValue)}
-          style={{ width: 250, backgroundColor: "#FF6B00", marginBottom: 20, color:'white' }}
+          style={{ width: 250, backgroundColor: "#34cee6", marginBottom: 20, color:'white' }}
           dropdownIconColor="white"
         >
           <Picker.Item label={idioma.selectPlaceholder} value="" />

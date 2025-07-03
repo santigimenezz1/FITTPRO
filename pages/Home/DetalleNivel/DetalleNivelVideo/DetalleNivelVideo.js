@@ -15,14 +15,14 @@ const styles = StyleSheet.create({
   } ,
   botonDesactivado: {
     borderWidth: 4,
-     borderColor: "#FF6B00",
+     borderColor: "#34cee6",
     width: "45%",
      height: 40,
       borderRadius: 14,
        display: "flex",
         justifyContent: "center",
          alignItems: "center",
-          backgroundColor: "#FF6B00",
+          backgroundColor: "#34cee6",
   },
 
   botonOn: {
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
        display: "flex",
         justifyContent: "center",
          alignItems: "center",
-          backgroundColor: "#FF6B00",
+          backgroundColor: "#34cee6",
           borderColor:"white"
   }
 })

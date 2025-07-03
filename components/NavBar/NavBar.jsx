@@ -10,7 +10,7 @@ const NavBar = () => {
         <SafeAreaView style={styles.safeArea}>
             <View style={styles.container__navBar}>
                 <View style={styles.container__navBar__titulo}>
-                    <Image width={230} height={65} source={{uri:"https://res.cloudinary.com/dcf9eqqgt/image/upload/v1747319293/APP%20ALFOMBRA%20DE%20FUTBOL%20AMAZON/futlab_9_wkq2bz.png"}}>
+                    <Image width={230} height={90} source={{uri:"https://res.cloudinary.com/dcf9eqqgt/image/upload/v1750757980/Flexrun_pro_1_ab4wmw.png"}}>
                         
                     </Image>
                     <Image 

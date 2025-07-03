@@ -176,14 +176,14 @@ const styles = StyleSheet.create({
     backgroundColor: 'red',
   },
   buttonClose: {
-    backgroundColor: '#FF6B00',
+    backgroundColor: '#34cee6',
     width:120
   },
   textStyle: {
     color: 'white',
     fontWeight: 'bold',
     textAlign: 'center',
-    backgroundColor:"#FF6B00",
+    backgroundColor:"#34cee6",
     fontFamily: 'NunitoSans_400Regular',
   },
   modalText: {

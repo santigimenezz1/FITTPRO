@@ -18,7 +18,7 @@ const LoginUsuarioNavigator = () => {
                 headerStyle: {
                     backgroundColor:"black",
                     borderWidth:3,
-                    borderBottomColor:"#FF6B00"
+                    borderBottomColor:"#34cee6"
                 },
                 headerTintColor: 'white', 
                 headerTitleStyle: {

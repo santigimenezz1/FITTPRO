@@ -4,12 +4,12 @@ import { RFValue } from "react-native-responsive-fontsize";
 const styles = StyleSheet.create({
     container__navBar:{
         width:"100%",
-        padding:15,
-        paddingLeft:20,
+        padding:5,
+        paddingLeft:10,
         display:"flex",
         flexDirection:"row",
         justifyContent:"space-between",
-        alignItems:"center"
+        alignItems:"center",
     },
     container__navBar__titulo:{
      display:"flex",
