@@ -33,9 +33,7 @@ const TarjetaNivelFittPro = ({ data, nivel, tiempo, navigation, nivelNombre, rut
   console.log(rutaNivel);
   console.log({ nivelNombre });
 
-  const img1= data.data.imagenTarjetaNivel
-  
-console.log(img1)
+
   return (
     <ImageBackground
       source={{

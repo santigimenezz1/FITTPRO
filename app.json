@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "FITTPRO",
+    "name": "FLEXRUN PRO",
     "slug": "fittpro",
-    "version": "1.0.12",
+    "version": "1.0.18",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",

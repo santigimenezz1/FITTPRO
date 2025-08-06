@@ -8,7 +8,7 @@ import HomeNavigator from './pages/Home/HomeNavigator.js';
 import Perfil from './pages/Perfil/Perfil.jsx';
 import AppLoading from 'expo-app-loading';
 import { useFonts, NunitoSans_400Regular, NunitoSans_700Bold } from '@expo-google-fonts/nunito-sans';
-import { FontAwesome5 } from '@expo/vector-icons';
+import { Feather, FontAwesome5 } from '@expo/vector-icons';
 import { Octicons } from '@expo/vector-icons';
 import LoginUsuarioNavigator from './pages/LoginUsuarios/LoginUsuariosNavigator.js';
 import GlobalContext, { CartContext } from './Context/Context.jsx';
@@ -92,7 +92,7 @@ function MyTabs() {
         options={{
           tabBarIcon: ({ focused }) => (
             <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-              <AntDesign name="caretright" size={24} color={focused ? '#34cee6' : 'white'} />
+<AntDesign name="playcircleo" size={24} color={focused ? '#34cee6' : 'white'} />
             </View>
           ),
         }}

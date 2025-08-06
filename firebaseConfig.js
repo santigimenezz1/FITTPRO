@@ -68,10 +68,5 @@ export const create = async (email, password, setUsuarioOn) => {
     }
   } catch (error) {
     console.log("❌ Error en registro:", error);
-    showMessage({
-      message: 'Error al crear la cuenta',
-      description: error.message,
-      type: 'danger',
-    });
   }
 };

@@ -57,24 +57,7 @@ const DetalleNivelVideo = () => {
   javaScriptEnabled={true}
   mediaPlaybackRequiresUserAction={false}
 />
-
             </View>
-
-            <View style={{ width: RFValue(300), borderWidth: 3, borderColor: "#34cee6", marginTop: 20 }}>
-                <View style={{position:"absolute", left:"5%", top:"20%",zIndex:10, display:"flex", gap:7}}>
-<Text style={{ color: "white", fontSize: RFValue(18), marginTop: 4, fontFamily: "System" }}>
-  Repeticiones: <Text style={{ color: "#34cee6" }}>5</Text>
-</Text>
-<Text style={{ color: "white", fontSize: RFValue(18), marginTop: 4, fontFamily: "System" }}>
-  Tiempo de cada repeticion: <Text style={{ color: "#34cee6" }}>30s</Text>
-</Text>
-<Text style={{ color: "white", fontSize: RFValue(18), marginTop: 4, fontFamily: "System" }}>
-  Nivel de dificultad: <Text style={{ color: "#34cee6" }}>Intermedio</Text>
-</Text>
-                </View>
-              <Image source={{ uri: "https://res.cloudinary.com/dcf9eqqgt/image/upload/v1748433826/imagen_julian_de_prueba_iddzwe.png" }} style={{ width: "100%", height: RFValue(150), opacity:0.6 }} />
-            </View>
-
           </View>
         </View>
       </ScrollView>
