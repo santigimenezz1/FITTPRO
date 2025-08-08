@@ -123,7 +123,7 @@ const Perfil = () => {
 
 return (
   <ImageBackground
-    source={{ uri: 'https://res.cloudinary.com/dcf9eqqgt/image/upload/v1747232068/20250514_1613_Entrenamiento_con_Escalera_Agilidad_remix_01jv7j73wzfw1rvhv9bc1rzhqt_dps9y5.png' }}
+    source={{ uri: 'https://res.cloudinary.com/dcf9eqqgt/image/upload/v1754508619/Dise%C3%B1o_sin_t%C3%ADtulo_40_x7dgir.png' }}
     style={{ flex: 1 }}
     imageStyle={{ opacity: 1 }}
   >

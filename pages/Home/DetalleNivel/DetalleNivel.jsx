@@ -25,7 +25,7 @@ const DetalleNivel = () => {
 return (
   <View style={styles.container}>
     <ImageBackground
-      source={{ uri: 'https://res.cloudinary.com/dcf9eqqgt/image/upload/v1747232068/20250514_1613_Entrenamiento_con_Escalera_Agilidad_remix_01jv7j73wzfw1rvhv9bc1rzhqt_dps9y5.png' }}
+      source={{ uri: 'https://res.cloudinary.com/dcf9eqqgt/image/upload/v1754509008/aebe8f28-4693-42fe-a9a7-b13a257b4f38_ydf6fc.png' }}
       style={styles.backgroundImage}
       imageStyle={styles.backgroundImageStyle}
     >

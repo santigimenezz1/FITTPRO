@@ -8,62 +8,66 @@ import { RFValue } from "react-native-responsive-fontsize";
 import { useContext } from "react";
 import { CartContext } from "../../Context/Context";
 
-
-
-
 const TarjetaConsejos = () => {
-            const {closed, setClosed, userRegistro, idiomaActual} = useContext(CartContext)
-    
+    const { closed, setClosed, userRegistro, idiomaActual } = useContext(CartContext)
+
     return (
         <View style={styles.container__tarjetaConsejos}>
             <Text style={styles.tittle}>Consejos</Text>
+
+            {/* Consejo 1 */}
             <View style={styles.container__consejos}>
-            <FontAwesome name="calendar-check-o" size={24} color="#34cee6" />  
-                      <View style={{width:"80%"}}>
-                      {idiomaActual === "espana" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Entrena de 10-30 minutos por dia para obtener los mejores resultados. La constancia es fundamental</Text>}
-                    {idiomaActual === "italia" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Allénati per 10-30 minuti al giorno per ottenere i migliori risultati. La costanza è fondamentale</Text>}
-                    {idiomaActual === "francia" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Entraîne-toi de 10 à 30 minutes par jour pour obtenir les meilleurs résultats. La constance est essentielle</Text>}
-                    {idiomaActual === "bandera" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Trainiere 10–30 Minuten pro Tag, um die besten Ergebnisse zu erzielen. Beständigkeit ist entscheidend</Text>}
-                    {idiomaActual === "paisesBajos" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>rainiere 10–30 Minuten pro Tag, um die besten Ergebnisse zu erzielen. Beständigkeit ist entscheidend.</Text>}
-                    {idiomaActual === "inglaterra" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Train for 10–30 minutes per day to achieve the best results. Consistency is key</Text>}
-                    {idiomaActual === "estadosUnidos" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Train for 10–30 minutes per day to achieve the best results. Consistency is key</Text>}
-                    {idiomaActual === "portugal" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Treine 10 a 30 minutos por dia para obter melhores resultados. A consistência é essencial</Text>}
-
+                <FontAwesome name="calendar-check-o" size={24} color="#34cee6" />
+                <View style={{ width: "80%" }}>
+                    {idiomaActual === "espana" && <Text style={estiloTexto}>Entrena todos los días con la app y sácale el máximo partido a tu kit de escalera y conos.</Text>}
+                    {idiomaActual === "italia" && <Text style={estiloTexto}>Allénati ogni giorno con l'app e sfrutta al massimo il tuo kit con scala e coni.</Text>}
+                    {idiomaActual === "francia" && <Text style={estiloTexto}>Entraîne-toi chaque jour avec l'app et tire le meilleur parti de ton kit d'entraînement.</Text>}
+                    {idiomaActual === "bandera" && <Text style={estiloTexto}>Trainiere täglich mit der App und nutze dein Trainingskit mit Leiter und Hütchen optimal.</Text>}
+                    {idiomaActual === "paisesBajos" && <Text style={estiloTexto}>Train elke dag met de app en haal het maximale uit je agility kit.</Text>}
+                    {idiomaActual === "inglaterra" && <Text style={estiloTexto}>Train every day with the app and get the most out of your agility kit.</Text>}
+                    {idiomaActual === "estadosUnidos" && <Text style={estiloTexto}>Train every day with the app and get the most out of your agility kit.</Text>}
+                    {idiomaActual === "portugal" && <Text style={estiloTexto}>Treine todos os dias com o app e aproveite ao máximo o seu kit com escada e cones.</Text>}
+                </View>
             </View>
-            </View>
 
+            {/* Consejo 2 */}
             <View style={styles.container__consejos}>
-            <AntDesign name="clockcircleo" size={24} color="#34cee6" />           
-             <View style={{width:"80%"}}>
-                    {idiomaActual === "espana" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Empieza despacio, dominalo y luego tu decides la velocidad</Text>}
-                    {idiomaActual === "italia" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Inizia lentamente, padroneggialo e poi decidi tu la velocità</Text>}
-                    {idiomaActual === "francia" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Commence lentement, maîtrise-le, puis décide de la vitesse</Text>}
-                    {idiomaActual === "bandera" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Beginne langsam, meistere es und entscheide dann über die Geschwindigkeit</Text>}
-                    {idiomaActual === "paisesBajos" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Begin langzaam, beheers het en bepaal daarna het tempo</Text>}
-                    {idiomaActual === "inglaterra" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Start slow, master it, and then decide the speed</Text>}
-                    {idiomaActual === "estadosUnidos" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Start slow, master it, and then decide the speed</Text>}
-                    {idiomaActual === "portugal" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Comece devagar, domine e depois decide a velocidade.</Text>}
+                <AntDesign name="clockcircleo" size={24} color="#34cee6" />
+                <View style={{ width: "80%" }}>
+                    {idiomaActual === "espana" && <Text style={estiloTexto}>Empieza despacio, perfecciona la técnica y luego aumenta la velocidad.</Text>}
+                    {idiomaActual === "italia" && <Text style={estiloTexto}>Inizia piano, perfeziona la tecnica e poi aumenta la velocità.</Text>}
+                    {idiomaActual === "francia" && <Text style={estiloTexto}>Commence lentement, perfectionne ta technique puis augmente la vitesse.</Text>}
+                    {idiomaActual === "bandera" && <Text style={estiloTexto}>Starte langsam, perfektioniere die Technik und erhöhe dann das Tempo.</Text>}
+                    {idiomaActual === "paisesBajos" && <Text style={estiloTexto}>Begin langzaam, perfectioneer je techniek en verhoog dan je snelheid.</Text>}
+                    {idiomaActual === "inglaterra" && <Text style={estiloTexto}>Start slow, master your technique, then increase the speed.</Text>}
+                    {idiomaActual === "estadosUnidos" && <Text style={estiloTexto}>Start slow, master your technique, then increase the speed.</Text>}
+                    {idiomaActual === "portugal" && <Text style={estiloTexto}>Comece devagar, aperfeiçoe a técnica e depois aumente a velocidade.</Text>}
+                </View>
+            </View>
 
-            </View>
-            </View>
+            {/* Consejo 3 */}
             <View style={styles.container__consejos}>
-            <FontAwesome6 name="person-running" size={24} color="#34cee6" />   
-                     <View style={{width:"80%"}}>
-                     {idiomaActual === "espana" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>No te sales ejercicios para mejorar por igual diferentes habilidades</Text>}
-                    {idiomaActual === "italia" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Non saltare gli esercizi per migliorare equamente le diverse abilità</Text>}
-                    {idiomaActual === "francia" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Ne saute pas les exercices pour améliorer de manière équilibrée différentes compétences</Text>}
-                    {idiomaActual === "bandera" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Überspringe keine Übungen, um verschiedene Fähigkeiten gleichermaßen zu verbessern</Text>}
-                    {idiomaActual === "paisesBajos" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Sla geen oefeningen over om verschillende vaardigheden gelijkmatig te verbeteren</Text>}
-                    {idiomaActual === "inglaterra" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Don't skip exercises to improve different skills equally</Text>}
-                    {idiomaActual === "estadosUnidos" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Don't skip exercises to improve different skills equally</Text>}
-                    {idiomaActual === "portugal" && <Text style={{color:"white", letterSpacing:1, fontSize:RFValue(13),fontFamily: 'NunitoSans_400Regular',}}>Não deixa os exercícios para melhorar diferentes habilidades igualmente.</Text>}
-
+                <FontAwesome6 name="person-running" size={24} color="#34cee6" />
+                <View style={{ width: "80%" }}>
+                    {idiomaActual === "espana" && <Text style={estiloTexto}>Usa la escalera y los conos para trabajar agilidad, velocidad y coordinación.</Text>}
+                    {idiomaActual === "italia" && <Text style={estiloTexto}>Usa la scala e i coni per allenare agilità, velocità e coordinazione.</Text>}
+                    {idiomaActual === "francia" && <Text style={estiloTexto}>Utilise l'échelle et les cônes pour travailler agilité, vitesse et coordination.</Text>}
+                    {idiomaActual === "bandera" && <Text style={estiloTexto}>Nutze die Leiter und Hütchen, um Agilität, Geschwindigkeit und Koordination zu trainieren.</Text>}
+                    {idiomaActual === "paisesBajos" && <Text style={estiloTexto}>Gebruik de ladder en pionnen om aan behendigheid, snelheid en coördinatie te werken.</Text>}
+                    {idiomaActual === "inglaterra" && <Text style={estiloTexto}>Use the ladder and cones to improve agility, speed, and coordination.</Text>}
+                    {idiomaActual === "estadosUnidos" && <Text style={estiloTexto}>Use the ladder and cones to improve agility, speed, and coordination.</Text>}
+                    {idiomaActual === "portugal" && <Text style={estiloTexto}>Use a escada e os cones para treinar agilidade, velocidade e coordenação.</Text>}
+                </View>
             </View>
-            </View>
-
-            
-
         </View>
     )
 }
+
+const estiloTexto = {
+    color: "white",
+    letterSpacing: 1,
+    fontSize: RFValue(13),
+    fontFamily: 'NunitoSans_400Regular',
+};
+
 export default TarjetaConsejos

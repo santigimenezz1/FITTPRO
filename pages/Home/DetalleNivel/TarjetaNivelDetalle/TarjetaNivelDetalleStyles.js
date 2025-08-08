@@ -16,7 +16,8 @@ const styles = StyleSheet.create({
   flexDirection: "row",
   alignItems: "center",
   justifyContent: "space-between",
-  marginTop:5
+  marginTop:5,
+
   
 },
     container__bloqueado:{
@@ -28,10 +29,11 @@ const styles = StyleSheet.create({
     },
     text:{
         color:"white",
-        fontSize: RFValue(17), // Ajusta el tamaño de la fuente de manera responsiva
+        fontSize: RFValue(15), // Ajusta el tamaño de la fuente de manera responsiva
         fontWeight:"bold",
         fontFamily: 'NunitoSans_400Regular',
-        letterSpacing:1.7
+        letterSpacing:1.7,
+  
 
     },
     texth2:{

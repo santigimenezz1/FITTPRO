@@ -185,6 +185,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     backgroundColor:"#34cee6",
     fontFamily: 'NunitoSans_400Regular',
+
   },
   modalText: {
     marginBottom: 15,
@@ -193,6 +194,7 @@ const styles = StyleSheet.create({
     fontSize:18,
     fontFamily: 'NunitoSans_400Regular',
     letterSpacing:1,
+    
     
   },
 });

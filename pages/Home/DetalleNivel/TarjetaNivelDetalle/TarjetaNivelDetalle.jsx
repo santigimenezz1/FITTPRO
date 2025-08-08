@@ -10,7 +10,7 @@ const TarjetaNivelDetalle = ({ setModalVisible, nivel, tiempo, navigation, ejerc
 
     const navegarDetalleVideo = () => {
         if (closed) {
-            navigation.navigate("DetalleNivelVideo", { ejercicio });
+            navigation.navigate("DetalleNivelVideo", { ejercicio, numero });
         } else {
             setModalVisible();
         }
@@ -31,6 +31,9 @@ const TarjetaNivelDetalle = ({ setModalVisible, nivel, tiempo, navigation, ejerc
         }
     };
 
+
+    console.log(ejercicio.estrellas.completas)
+
     return (
         <View style={styles.container__tarjetaNivelDetalle}>
             <Pressable onPress={navegarDetalleVideo} style={styles.container__tarjetaNivel}>
@@ -47,6 +50,7 @@ const TarjetaNivelDetalle = ({ setModalVisible, nivel, tiempo, navigation, ejerc
                         <View style={{ width: RFValue(150) }}>
                             <Text style={styles.text}>{obtenerNombreEjercicio()}</Text>
                             <Text style={styles.texth2}>{ejercicio.duracion}</Text>
+                            
                         </View>
                     </View>
 
@@ -59,6 +63,7 @@ const TarjetaNivelDetalle = ({ setModalVisible, nivel, tiempo, navigation, ejerc
                                 <FontAwesome key={`star-empty-${i}`} name="star-o" size={26} color="white" />
                             ))}
                         </View>
+                        
                     ) : (
                         <View style={styles.container__bloqueado}>
                             <View style={{ width: "100%", alignItems: "center" }}>
