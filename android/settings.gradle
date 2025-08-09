@@ -1,3 +1,5 @@
+// settings.gradle (parcheado, safe include check)
+
 pluginManagement {
   def version = providers.exec {
     commandLine("node", "-e", "console.log(require('react-native/package.json').version);")
@@ -64,3 +66,53 @@ if (getRNMinorVersion() < 75) {
 
 include ':app'
 includeBuild(new File(["node", "--print", "require.resolve('@react-native/gradle-plugin/package.json', { paths: [require.resolve('react-native/package.json')] })"].execute(null, rootDir).text.trim()).getParentFile())
+
+// ---------- Fallback manual includes (solo si existen proyectos Gradle válidos) ----------
+def nativeModuleMap = [
+  ':react-native-async-storage_async-storage' : '@react-native-async-storage/async-storage',
+  ':react-native-firebase_app'                : '@react-native-firebase/app',
+  ':react-native-picker_picker'               : '@react-native-picker/picker',
+  ':react-native-gesture-handler'             : 'react-native-gesture-handler',
+  ':react-native-image-picker'                : 'react-native-image-picker',
+  ':react-native-in-app-review'               : 'react-native-in-app-review',
+  ':react-native-reanimated'                  : 'react-native-reanimated',
+  ':react-native-safe-area-context'           : 'react-native-safe-area-context',
+  ':react-native-screens'                     : 'react-native-screens',
+  ':react-native-svg'                         : 'react-native-svg',
+  ':react-native-vector-icons'                : 'react-native-vector-icons',
+  ':react-native-version-check'               : 'react-native-version-check',
+  ':react-native-video'                       : 'react-native-video',
+  ':react-native-webview'                     : 'react-native-webview'
+]
+
+nativeModuleMap.each { projectName, modulePath ->
+  try {
+    def candidateDirs = [
+      new File(rootDir, "../node_modules/${modulePath}/android"),
+      new File(rootDir, "../node_modules/${modulePath}")
+    ]
+
+    def found = candidateDirs.find { it.exists() && it.isDirectory() }
+
+    if (found) {
+      // COMPROBACIÓN ADICIONAL: debe contener build.gradle o build.gradle.kts
+      def hasGradleFile = new File(found, "build.gradle").exists() || new File(found, "build.gradle.kts").exists()
+      if (!hasGradleFile) {
+        println("Skipping include for ${modulePath} because no build.gradle found in ${found}")
+        return
+      }
+
+      if (findProject(projectName) == null) {
+        include projectName
+        project(projectName).projectDir = found
+        println("Included native module ${projectName} -> ${found}")
+      } else {
+        println("Native module ${projectName} was already included by autolinking")
+      }
+    } else {
+      println("Native module not found in node_modules (skipping): ${modulePath}")
+    }
+  } catch (Exception e) {
+    println("Warning: could not include ${projectName} -> ${modulePath} : ${e.message}")
+  }
+}
